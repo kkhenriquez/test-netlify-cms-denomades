@@ -6,6 +6,21 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "cities"
+    label: "Ciudades"
+    folder: "src/pages/cities"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "city-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Planes perfectos", name: "perfectPlansEs", widget: "string"}
+      - {label: "Perfect Plans", name: "perfectPlansEn", widget: "string"}
+      - {label: "Planes Perfeitos", name: "perfectPlansPt", widget: "string"}
+      - {label: "Tours y actividades", name: "toursEs", widget: "string"}
+      - {label: "Tours and Activities", name: "toursEn", widget: "string"}
+      - {label: "Tours e atividades", name: "toursPt", widget: "string"}
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
